@@ -1,0 +1,56 @@
+<h1><%= @user.getFullName %></h1>
+<% if @user.game.present? %>
+<h3>Developer of <%= link_to @user.game.title, game_path(@user.game) %></h3>
+<div class="row">
+<div class="col col-md-6">
+<div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Comments Made By This User</h3>
+        </div>
+        <div class="panel-body">
+          <ul class="list-group">
+          <% if !@user.comments.any? %>
+            <p>No comments to show</p>
+          <% end %>
+          <% @user.comments.reverse.each do |c| %>
+            <% flash.each do |name, msg| %>
+            <div class="alert alert-<%= name %>">
+              <%= msg %>
+            </div>
+            <% end %>
+            <li class="list-group-item">
+              <p><b>Comment by <%= c.user.getFullName %> on <%= link_to c.game.title, game_path(c.game) %></b></p>
+              <p><%= c.content %></p>
+              <% if c.user == current_user || c.game.user == current_user %>
+                <%= link_to "Delete", comment_path(c), method: :delete, data: {confirm: 'Are you sure?'} %>
+              <% end %>
+            </li>
+          <% end %>
+          </ul>
+      </div>
+    </div>
+  </div>
+<div class="col col-md-6">
+<div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Games Favorited By This User</h3>
+        </div>
+        <div class="panel-body">
+          <% if !@user.favorites.any? %>
+            <p>No favorites to show</p>
+          <% end %>
+          <% @user.favorites.reverse.each do |f| %>
+            <li>
+              <p><b><%= link_to f.game.title, game_path(f.game) %></b></p>
+            </li>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+    <% else %>
+    <p>This user has not yet submitted a game.</p>
+    <% end %>
+<% if current_user.id == @user.id %>
+  <%= link_to "Edit My Account", edit_user_registration_path %> 
+<% end %>

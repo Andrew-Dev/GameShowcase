@@ -1,0 +1,2 @@
+class UserClassperiodController < ApplicationController
+end

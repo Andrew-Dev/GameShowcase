@@ -1,0 +1,15 @@
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Join Class</h3>
+  </div>
+  <div class="panel-body">
+ <!-- flash errors! -->
+ <p>You must join a class before proceeding any further. You will be provided with a class code.</p>
+  <%= form_tag(controller: "user_classperiod", action: "create", method: "post") %>
+  	    <div><%= f.label 'Class Code' %><br />
+  	    <%= f.text_field :code, autofocus: true, class: 'form-control' %></di
+        <div><%= submit_tag("Join Class") %></div>
+  <% end %>
+</div></div></div>

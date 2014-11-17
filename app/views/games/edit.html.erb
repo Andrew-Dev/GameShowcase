@@ -1,0 +1,23 @@
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit My Game in <%= @game.getGameClassPeriod.title %></h3>
+  </div>
+  <div class="panel-body">
+  <%= form_for @game do |f| %>
+  	    <div><%= f.label 'Game Title' %><br />
+  	    <%= f.text_field :title, autofocus: true, class: 'form-control' %></div>
+  	    <div><%= f.label 'Game Description/Readme' %><br />
+  	    <%= f.text_area :description, autofocus: true, class: 'form-control', style: 'height:240px' %></div>
+        <div><%= f.label 'Main Screenshot' %><br />
+        <%= f.file_field :main_screenshot, autofocus: true %></div>
+        <div><%= f.label 'Game exe File' %><br />
+        <%= f.file_field :file, autofocus: true %></div>
+          <br>
+        <div><%= f.submit "Save Game", class: 'btn btn-primary' %></div>
+  <% end %>
+</div>
+</div>
+<%= button_to "Delete This Game", game_path(@game), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger' %>
+</div>

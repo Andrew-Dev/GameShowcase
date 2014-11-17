@@ -1,0 +1,31 @@
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Submit Game</h3>
+  </div>
+  <div class="panel-body">
+  <% if @game.errors.any? %>
+  <div class="alert alert-danger">
+  <ul>
+    <% @game.errors.full_messages.each do |e| %>
+      <li><%= e %></li>
+    <%end%>
+  </ul>
+</div>
+  <% end %>
+  <%= form_for @game do |f| %>
+  	    <div><%= f.label 'Game Title' %><i> (Max 40 chars.)</i><br />
+  	    <%= f.text_field :title, autofocus: true, class: 'form-control' %></div>
+  	    <div><%= f.label 'Game Description/Readme' %><br />
+  	    <%= f.text_area :description, autofocus: true, class: 'form-control', style: 'height:240px' %></div>
+        <div><%= f.label 'Main Screenshot' %><br />
+        <%= f.file_field :main_screenshot, autofocus: true %></div>
+        <div><%= f.label 'Game exe File' %><br />
+        <%= f.file_field :file, autofocus: true %></div>
+        <div><%= f.label 'Class Code' %><i> (Your game will be submitted to this class.)</i><br />
+        <%= f.text_field :code, autofocus: true, class: 'form-control' %></div>
+        <br>
+        <div><%= f.submit "Submit Game", class: 'btn btn-primary' %></div>
+  <% end %>
+</div></div></div>

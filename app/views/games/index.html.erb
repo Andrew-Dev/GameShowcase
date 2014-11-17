@@ -1,0 +1,42 @@
+<% if current_user.game || current_user.is_admin == true %>
+<h2><% if current_user.is_admin != true%><%= current_user.game.getGameClassPeriod.title %><% end %> Games</h2>
+<style>
+.preview {
+  max-width: 300px;
+  height: 340px;
+  display: block; 
+}
+.imgpreview {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+.gametitle {
+  font-size: 20px;
+}
+</style>
+    <div class="container">
+      <div class="row">
+        <!-- begin rails output -->
+        <% @games.each do |g| %>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail preview" >
+            <!-- image -->
+              <div class="imgpreview"><img src="<%= g.main_screenshot.to_s %>" class="imgpreview"></div>
+            <div class="caption">
+              <h3 class="gametitle"><b><%= g.title %></b></h3>
+              <p>Created by <%= g.user.firstname %> <%= g.user.lastname %></p>
+              <p>
+                <%= link_to "View Game", game_path(g.id), :class => "btn btn-primary" %>
+                <a href="<%= g.file.to_s %>" class="btn btn-default" role="button">Download</a>
+              </p>
+          </div>
+        </div></div>
+        <% end %>
+        <!-- end rails output -->
+      </div>
+    </div>
+    <% else %>
+  <h2>Please submit a game</h2>
+  <p>Please submit a game to a class to play and rate games. This can be done by pressing 'New Game' above.</p>
+  <% end %>

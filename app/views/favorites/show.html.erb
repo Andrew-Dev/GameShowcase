@@ -1,0 +1,23 @@
+<h1><%= @game.title %></h1>
+<p><%= link_to "<< Back to #{@game.title} information page", game_path(@game) %></p>
+<div class="row">
+<div class="col col-md-12">
+<div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Users who have favorited <%= @game.title %></h3>
+        </div>
+        <div class="panel-body">
+          <ul>
+          <% if !@game.favorites.any? %>
+            <p>No favorites to show</p>
+          <% end %>
+          <% @favorites.reverse.each do |f| %>
+            <li>
+              <p><%= link_to f.user.getFullName, profile_path(f.user) %></p>
+            </li>
+          <% end %>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

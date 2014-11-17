@@ -1,0 +1,2 @@
+module UserClassperiodHelper
+end

@@ -1,0 +1,11 @@
+<ul>
+<% if current_user && current_user.is_admin == true %>
+<% @users.each do |u| %>
+	<li>
+		<p><%= link_to u.getFullName, profile_path(u) %></p>
+	</li>
+	<% end %>
+<% else %>
+<p>No permission.</p>
+<% end %>
+</ul>

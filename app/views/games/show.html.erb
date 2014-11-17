@@ -1,0 +1,77 @@
+<h1><%= @game.title %></h1>
+<p>A game by <%= link_to @game.user.getFullName, profile_path(@game.user) %> for <%= @game.getGameClassPeriod.title %>
+<div class="row">
+<div class="col-md-3">
+	<div class="panel panel-primary">
+  			<div class="panel-heading">
+    			<h3 class="panel-title">Download</h3>
+  			</div>
+  			<div class="panel-body">
+  				<a href="<%= @game.file.to_s %>" class="btn btn-primary">Download</a>
+  				<p>File Size: <%= (@game.file.size/1000000.0).round(3) %> MB</p>
+			</div>
+		</div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Favorites</h3>
+        </div>
+        <div class="panel-body">
+          <% if Favorite.where("game_id = #{@game.id} AND user_id = #{current_user.id}").count == 1 %>
+            <%= button_to "Unfavorite This Game", favorite_path(@game), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger' %> 
+          <% else %>
+            <%= form_tag(controller: "favorites", action: "create", method: "post") do %>
+              <%= hidden_field_tag(:game_id, @game.id) %>
+              <%= submit_tag("Favorite This Game", class: "btn btn-success") %>
+            <% end %>          
+          <% end %>
+          <p><%= link_to "This game has #{@game.favorites.count} favorite(s).",favorite_path(@game) %>
+      </div>
+    </div>
+</div>
+<div class="col-md-9">
+	<div class="panel panel-primary">
+  			<div class="panel-heading">
+    			<h3 class="panel-title">Game Details</h3>
+  			</div>
+  			<div class="panel-body">
+          <b>Screenshot</b>
+          <br>
+  				<img src="<%= @game.main_screenshot.to_s %>" style="max-width:480px">
+  				<br>
+          <b>Description/Readme</b>
+  				<p><%= @game.description %></p>
+			</div>
+		</div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Comments</h3>
+        </div>
+        <div class="panel-body">
+          <%= form_tag(controller: "comments", action: "create", method: "post") do %>
+            <%= label_tag(:content,"New Comment") %>
+            <%= text_area_tag(:content, nil, class: "form-control",autofocus: false) %>
+            <br>
+            <%= hidden_field_tag(:game_id, @game.id) %>
+            <%= submit_tag("Submit", class: "btn btn-primary") %>
+          <% end %>
+          <br>
+          <ul class="list-group">
+          <% @game.comments.reverse.each do |c| %>
+            <% flash.each do |name, msg| %>
+            <div class="alert alert-<%= name %>">
+              <%= msg %>
+            </div>
+            <% end %>
+            <li class="list-group-item">
+              <p><b>Comment by <%= link_to c.user.getFullName, profile_path(c.user) %></b></p>
+              <p><%= c.content %></p>
+              <% if c.user == current_user || @game.user == current_user %>
+                <%= link_to "Delete", comment_path(c), method: :delete, data: {confirm: 'Are you sure?'} %>
+              <% end %>
+            </li>
+          <% end %>
+          </ul>
+      </div>
+    </div>
+	</div>
+</div>

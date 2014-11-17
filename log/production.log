@@ -1,0 +1,2175 @@
+I, [2014-11-13T23:21:40.498857 #36057]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:21:40 -0500
+I, [2014-11-13T23:21:40.508928 #36057]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:21:40.523280 #36057]  INFO -- : Completed 500 Internal Server Error in 14ms
+F, [2014-11-13T23:21:40.527327 #36057] FATAL -- : 
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  activerecord (4.1.5) lib/active_record/connection_adapters/sqlite3_adapter.rb:515:in `table_structure'
+  activerecord (4.1.5) lib/active_record/connection_adapters/sqlite3_adapter.rb:390:in `columns'
+  activerecord (4.1.5) lib/active_record/connection_adapters/schema_cache.rb:93:in `block in prepare_default_proc'
+  activerecord (4.1.5) lib/active_record/connection_adapters/schema_cache.rb:44:in `yield'
+  activerecord (4.1.5) lib/active_record/connection_adapters/schema_cache.rb:44:in `columns'
+  activerecord (4.1.5) lib/active_record/model_schema.rb:214:in `columns'
+  activerecord (4.1.5) lib/active_record/model_schema.rb:223:in `columns_hash'
+  activerecord (4.1.5) lib/active_record/inheritance.rb:180:in `subclass_from_attributes?'
+  activerecord (4.1.5) lib/active_record/inheritance.rb:23:in `new'
+  devise (3.4.0) app/controllers/devise/sessions_controller.rb:9:in `new'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:22:37.581763 #36062]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:22:37 -0500
+I, [2014-11-13T23:22:37.592439 #36062]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:22:37.639075 #36062]  INFO -- :   Rendered devise/shared/_links.html.erb (1.9ms)
+I, [2014-11-13T23:22:37.639240 #36062]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (17.3ms)
+I, [2014-11-13T23:22:37.642060 #36062]  INFO -- : Completed 200 OK in 49ms (Views: 23.3ms | ActiveRecord: 0.7ms)
+I, [2014-11-13T23:22:37.709393 #36062]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2014-11-13 23:22:37 -0500
+F, [2014-11-13T23:22:37.711357 #36062] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:22:37.712104 #36062]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2014-11-13 23:22:37 -0500
+F, [2014-11-13T23:22:37.713997 #36062] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:13.806914 #36070]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:23:13 -0500
+I, [2014-11-13T23:23:13.815798 #36070]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:23:13.862760 #36070]  INFO -- :   Rendered devise/shared/_links.html.erb (1.3ms)
+I, [2014-11-13T23:23:13.862877 #36070]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+I, [2014-11-13T23:23:13.864977 #36070]  INFO -- : Completed 200 OK in 49ms (Views: 22.4ms | ActiveRecord: 0.7ms)
+I, [2014-11-13T23:23:13.940440 #36070]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:23:13 -0500
+F, [2014-11-13T23:23:13.942584 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:13.945573 #36070]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:23:13 -0500
+F, [2014-11-13T23:23:13.947531 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:14.779300 #36070]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:23:14 -0500
+I, [2014-11-13T23:23:14.780659 #36070]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:23:14.785211 #36070]  INFO -- :   Rendered devise/shared/_links.html.erb (0.4ms)
+I, [2014-11-13T23:23:14.785335 #36070]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+I, [2014-11-13T23:23:14.786263 #36070]  INFO -- : Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:23:14.828279 #36070]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:23:14 -0500
+F, [2014-11-13T23:23:14.830380 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:14.831133 #36070]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:23:14 -0500
+F, [2014-11-13T23:23:14.833162 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:19.157567 #36070]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 23:23:19 -0500
+I, [2014-11-13T23:23:19.159712 #36070]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-13T23:23:19.163361 #36070]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+I, [2014-11-13T23:23:19.164314 #36070]  INFO -- : Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:23:19.249823 #36070]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:23:19 -0500
+F, [2014-11-13T23:23:19.253319 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:19.254203 #36070]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:23:19 -0500
+F, [2014-11-13T23:23:19.257001 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:20.661725 #36070]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-13 23:23:20 -0500
+I, [2014-11-13T23:23:20.663534 #36070]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2014-11-13T23:23:20.670546 #36070]  INFO -- :   Rendered devise/shared/_links.html.erb (0.4ms)
+I, [2014-11-13T23:23:20.670649 #36070]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (4.2ms)
+I, [2014-11-13T23:23:20.671571 #36070]  INFO -- : Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:23:20.723260 #36070]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:23:20 -0500
+F, [2014-11-13T23:23:20.725579 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:20.726559 #36070]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:23:20 -0500
+F, [2014-11-13T23:23:20.728465 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:22.296000 #36070]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 23:23:22 -0500
+I, [2014-11-13T23:23:22.296870 #36070]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-13T23:23:22.298217 #36070]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+I, [2014-11-13T23:23:22.299385 #36070]  INFO -- : Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:23:22.353791 #36070]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:23:22 -0500
+F, [2014-11-13T23:23:22.355650 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:22.356387 #36070]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:23:22 -0500
+F, [2014-11-13T23:23:22.358422 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:24.401236 #36070]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:23:24 -0500
+I, [2014-11-13T23:23:24.402173 #36070]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:23:24.406020 #36070]  INFO -- :   Rendered devise/shared/_links.html.erb (0.4ms)
+I, [2014-11-13T23:23:24.406127 #36070]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+I, [2014-11-13T23:23:24.406951 #36070]  INFO -- : Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:23:24.459482 #36070]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:23:24 -0500
+F, [2014-11-13T23:23:24.461631 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:23:24.462605 #36070]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:23:24 -0500
+F, [2014-11-13T23:23:24.464998 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:24:05.517490 #36070]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:24:05 -0500
+F, [2014-11-13T23:24:05.519464 #36070] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:18.394431 #36122]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:25:18 -0500
+I, [2014-11-13T23:25:18.404857 #36122]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:25:18.450262 #36122]  INFO -- :   Rendered devise/shared/_links.html.erb (1.7ms)
+I, [2014-11-13T23:25:18.450376 #36122]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (18.1ms)
+I, [2014-11-13T23:25:18.452326 #36122]  INFO -- : Completed 200 OK in 47ms (Views: 22.8ms | ActiveRecord: 0.7ms)
+I, [2014-11-13T23:25:18.526899 #36122]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:25:18 -0500
+F, [2014-11-13T23:25:18.529139 #36122] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:18.530154 #36122]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:25:18 -0500
+F, [2014-11-13T23:25:18.532639 #36122] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:19.868211 #36122]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:25:19 -0500
+I, [2014-11-13T23:25:19.869662 #36122]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:25:19.874359 #36122]  INFO -- :   Rendered devise/shared/_links.html.erb (0.4ms)
+I, [2014-11-13T23:25:19.874479 #36122]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+I, [2014-11-13T23:25:19.875369 #36122]  INFO -- : Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:25:19.950647 #36122]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:25:19 -0500
+F, [2014-11-13T23:25:19.953590 #36122] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:19.954445 #36122]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:25:19 -0500
+F, [2014-11-13T23:25:19.956883 #36122] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:55.897980 #36234]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:25:55 -0500
+I, [2014-11-13T23:25:55.907125 #36234]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:25:55.954334 #36234]  INFO -- :   Rendered devise/shared/_links.html.erb (1.3ms)
+I, [2014-11-13T23:25:55.954447 #36234]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (15.8ms)
+I, [2014-11-13T23:25:55.956546 #36234]  INFO -- : Completed 200 OK in 49ms (Views: 22.6ms | ActiveRecord: 0.7ms)
+I, [2014-11-13T23:25:56.036235 #36234]  INFO -- : Started GET "/assets/application.css" for 127.0.0.1 at 2014-11-13 23:25:56 -0500
+F, [2014-11-13T23:25:56.038354 #36234] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:56.041129 #36234]  INFO -- : Started GET "/assets/application.js" for 127.0.0.1 at 2014-11-13 23:25:56 -0500
+F, [2014-11-13T23:25:56.043242 #36234] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:56.795166 #36234]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:25:56 -0500
+I, [2014-11-13T23:25:56.796088 #36234]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:25:56.799771 #36234]  INFO -- :   Rendered devise/shared/_links.html.erb (0.3ms)
+I, [2014-11-13T23:25:56.799874 #36234]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+I, [2014-11-13T23:25:56.800768 #36234]  INFO -- : Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:25:56.873779 #36234]  INFO -- : Started GET "/assets/application.css" for 127.0.0.1 at 2014-11-13 23:25:56 -0500
+F, [2014-11-13T23:25:56.875930 #36234] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application.css"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:25:56.876835 #36234]  INFO -- : Started GET "/assets/application.js" for 127.0.0.1 at 2014-11-13 23:25:56 -0500
+F, [2014-11-13T23:25:56.879121 #36234] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application.js"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:26:34.564555 #36239]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:26:34 -0500
+I, [2014-11-13T23:26:34.573374 #36239]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:26:34.620976 #36239]  INFO -- :   Rendered devise/shared/_links.html.erb (1.5ms)
+I, [2014-11-13T23:26:34.621100 #36239]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (17.9ms)
+I, [2014-11-13T23:26:34.623207 #36239]  INFO -- : Completed 200 OK in 50ms (Views: 23.0ms | ActiveRecord: 0.7ms)
+I, [2014-11-13T23:26:34.694933 #36239]  INFO -- : Started GET "/assets/application-bfe73e3318e13a4acbc4c85d13b6030e.css" for 127.0.0.1 at 2014-11-13 23:26:34 -0500
+I, [2014-11-13T23:26:36.280187 #36239]  INFO -- : Started GET "/assets/application-fcd55272dcbc6d2e01f9746c3870935b.js" for 127.0.0.1 at 2014-11-13 23:26:36 -0500
+I, [2014-11-13T23:26:43.276387 #36239]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 23:26:43 -0500
+I, [2014-11-13T23:26:43.278422 #36239]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-13T23:26:43.281847 #36239]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+I, [2014-11-13T23:26:43.282631 #36239]  INFO -- : Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:27:00.107225 #36241]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:27:00 -0500
+I, [2014-11-13T23:27:00.115899 #36241]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:27:00.166490 #36241]  INFO -- :   Rendered devise/shared/_links.html.erb (1.4ms)
+I, [2014-11-13T23:27:00.166623 #36241]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (18.0ms)
+I, [2014-11-13T23:27:00.168777 #36241]  INFO -- : Completed 200 OK in 53ms (Views: 23.2ms | ActiveRecord: 1.2ms)
+I, [2014-11-13T23:27:03.237332 #36241]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:27:03 -0500
+I, [2014-11-13T23:27:03.239034 #36241]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2014-11-13T23:27:03.239134 #36241]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xr/PEQ9N3yLioOSnpAJBw2f9pXap2xSvhwvlF+a4ioI=", "user"=>{"email"=>"aarpasi@gmx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2014-11-13T23:27:03.391796 #36241]  INFO -- : Redirected to http://localhost:3000/
+I, [2014-11-13T23:27:03.392014 #36241]  INFO -- : Completed 302 Found in 153ms (ActiveRecord: 4.1ms)
+I, [2014-11-13T23:27:03.398123 #36241]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 23:27:03 -0500
+I, [2014-11-13T23:27:03.399970 #36241]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-13T23:27:03.401634 #36241]  INFO -- : Redirected to http://localhost:3000/games
+I, [2014-11-13T23:27:03.401813 #36241]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+I, [2014-11-13T23:27:03.432338 #36241]  INFO -- : Started GET "/games" for 127.0.0.1 at 2014-11-13 23:27:03 -0500
+I, [2014-11-13T23:27:03.435993 #36241]  INFO -- : Processing by GamesController#index as HTML
+I, [2014-11-13T23:27:03.509623 #36241]  INFO -- :   Rendered games/index.html.erb within layouts/application (6.9ms)
+I, [2014-11-13T23:27:03.510916 #36241]  INFO -- : Completed 200 OK in 75ms (Views: 9.3ms | ActiveRecord: 2.0ms)
+I, [2014-11-13T23:27:03.681747 #36241]  INFO -- : Started GET "/uploads/game/main_screenshot/46/2048.jpg" for 127.0.0.1 at 2014-11-13 23:27:03 -0500
+F, [2014-11-13T23:27:03.683737 #36241] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/uploads/game/main_screenshot/46/2048.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:27:03.684406 #36241]  INFO -- : Started GET "/uploads/game/main_screenshot/47/iceland-west-fjords.jpg" for 127.0.0.1 at 2014-11-13 23:27:03 -0500
+F, [2014-11-13T23:27:03.686218 #36241] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/uploads/game/main_screenshot/47/iceland-west-fjords.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:27:06.227252 #36241]  INFO -- : Started GET "/games/46" for 127.0.0.1 at 2014-11-13 23:27:06 -0500
+I, [2014-11-13T23:27:06.228310 #36241]  INFO -- : Processing by GamesController#show as HTML
+I, [2014-11-13T23:27:06.228357 #36241]  INFO -- :   Parameters: {"id"=>"46"}
+I, [2014-11-13T23:27:06.348934 #36241]  INFO -- :   Rendered games/show.html.erb within layouts/application (117.3ms)
+I, [2014-11-13T23:27:06.351121 #36241]  INFO -- : Completed 200 OK in 123ms (Views: 119.3ms | ActiveRecord: 1.8ms)
+I, [2014-11-13T23:27:06.378809 #36241]  INFO -- : Started GET "/uploads/game/main_screenshot/46/2048.jpg" for 127.0.0.1 at 2014-11-13 23:27:06 -0500
+F, [2014-11-13T23:27:06.381018 #36241] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/uploads/game/main_screenshot/46/2048.jpg"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:27:09.146800 #36241]  INFO -- : Started GET "/games/46/edit" for 127.0.0.1 at 2014-11-13 23:27:09 -0500
+I, [2014-11-13T23:27:09.148691 #36241]  INFO -- : Processing by GamesController#edit as HTML
+I, [2014-11-13T23:27:09.148775 #36241]  INFO -- :   Parameters: {"id"=>"46"}
+I, [2014-11-13T23:27:09.160214 #36241]  INFO -- :   Rendered games/edit.html.erb within layouts/application (6.5ms)
+I, [2014-11-13T23:27:09.161229 #36241]  INFO -- : Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.7ms)
+I, [2014-11-13T23:27:22.195878 #36241]  INFO -- : Started PATCH "/games/46" for 127.0.0.1 at 2014-11-13 23:27:22 -0500
+I, [2014-11-13T23:27:22.199239 #36241]  INFO -- : Processing by GamesController#update as HTML
+I, [2014-11-13T23:27:22.199338 #36241]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTRRsfjnYfuGJfg9zKxfRj793Ux3+nSLMxEL/8SQ238=", "game"=>{"title"=>"test", "description"=>"hi", "main_screenshot"=>#<ActionDispatch::Http::UploadedFile:0x007fd9442eedf0 @tempfile=#<Tempfile:/var/folders/5y/gyng3x4j5wg5gn3d5qyhhskc0000gn/T/RackMultipart20141113-36241-1yik81k>, @original_filename="Screen Shot 2014-11-11 at 9.18.35 AM.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"game[main_screenshot]\"; filename=\"Screen Shot 2014-11-11 at 9.18.35 AM.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save Game", "id"=>"46"}
+I, [2014-11-13T23:27:22.216442 #36241]  INFO -- : Redirected to http://localhost:3000/games/46
+I, [2014-11-13T23:27:22.216618 #36241]  INFO -- : Completed 302 Found in 17ms (ActiveRecord: 4.4ms)
+I, [2014-11-13T23:27:22.224724 #36241]  INFO -- : Started GET "/games/46" for 127.0.0.1 at 2014-11-13 23:27:22 -0500
+I, [2014-11-13T23:27:22.225586 #36241]  INFO -- : Processing by GamesController#show as HTML
+I, [2014-11-13T23:27:22.225635 #36241]  INFO -- :   Parameters: {"id"=>"46"}
+I, [2014-11-13T23:27:22.238021 #36241]  INFO -- :   Rendered games/show.html.erb within layouts/application (9.1ms)
+I, [2014-11-13T23:27:22.269818 #36241]  INFO -- : Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 1.4ms)
+I, [2014-11-13T23:27:22.376121 #36241]  INFO -- : Started GET "/uploads/game/main_screenshot/46/Screen_Shot_2014-11-11_at_9.18.35_AM.png" for 127.0.0.1 at 2014-11-13 23:27:22 -0500
+F, [2014-11-13T23:27:22.378489 #36241] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/uploads/game/main_screenshot/46/Screen_Shot_2014-11-11_at_9.18.35_AM.png"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:27:39.494114 #36241]  INFO -- : Started GET "/uploads/game/main_screenshot/46/Screen_Shot_2014-11-11_at_9.18.35_AM.png" for 127.0.0.1 at 2014-11-13 23:27:39 -0500
+F, [2014-11-13T23:27:39.496078 #36241] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/uploads/game/main_screenshot/46/Screen_Shot_2014-11-11_at_9.18.35_AM.png"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-13T23:30:04.838618 #36264]  INFO -- : Started GET "/games/46" for 127.0.0.1 at 2014-11-13 23:30:04 -0500
+I, [2014-11-13T23:30:04.846812 #36264]  INFO -- : Processing by GamesController#show as HTML
+I, [2014-11-13T23:30:04.846887 #36264]  INFO -- :   Parameters: {"id"=>"46"}
+I, [2014-11-13T23:30:04.917234 #36264]  INFO -- :   Rendered games/show.html.erb within layouts/application (28.8ms)
+I, [2014-11-13T23:30:04.920034 #36264]  INFO -- : Completed 200 OK in 73ms (Views: 32.5ms | ActiveRecord: 3.5ms)
+I, [2014-11-13T23:30:11.800884 #36264]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 23:30:11 -0500
+I, [2014-11-13T23:30:11.803080 #36264]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-13T23:30:11.804819 #36264]  INFO -- : Redirected to http://localhost:3000/games
+I, [2014-11-13T23:30:11.805366 #36264]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+I, [2014-11-13T23:30:11.814695 #36264]  INFO -- : Started GET "/games" for 127.0.0.1 at 2014-11-13 23:30:11 -0500
+I, [2014-11-13T23:30:11.815688 #36264]  INFO -- : Processing by GamesController#index as HTML
+I, [2014-11-13T23:30:11.822964 #36264]  INFO -- :   Rendered games/index.html.erb within layouts/application (4.1ms)
+I, [2014-11-13T23:30:11.824051 #36264]  INFO -- : Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.8ms)
+I, [2014-11-13T23:30:14.944998 #36264]  INFO -- : Started GET "/games/46/edit" for 127.0.0.1 at 2014-11-13 23:30:14 -0500
+I, [2014-11-13T23:30:14.945961 #36264]  INFO -- : Processing by GamesController#edit as HTML
+I, [2014-11-13T23:30:14.946014 #36264]  INFO -- :   Parameters: {"id"=>"46"}
+I, [2014-11-13T23:30:14.961277 #36264]  INFO -- :   Rendered games/edit.html.erb within layouts/application (12.6ms)
+I, [2014-11-13T23:30:14.962390 #36264]  INFO -- : Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+I, [2014-11-13T23:30:15.813356 #36264]  INFO -- : Started GET "/profile/4" for 127.0.0.1 at 2014-11-13 23:30:15 -0500
+I, [2014-11-13T23:30:15.815642 #36264]  INFO -- : Processing by ProfileController#show as HTML
+I, [2014-11-13T23:30:15.815692 #36264]  INFO -- :   Parameters: {"id"=>"4"}
+I, [2014-11-13T23:30:15.870131 #36264]  INFO -- :   Rendered profile/show.html.erb within layouts/application (51.2ms)
+I, [2014-11-13T23:30:15.871559 #36264]  INFO -- : Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 1.3ms)
+I, [2014-11-13T23:30:16.982606 #36264]  INFO -- : Started GET "/games/46" for 127.0.0.1 at 2014-11-13 23:30:16 -0500
+I, [2014-11-13T23:30:16.983581 #36264]  INFO -- : Processing by GamesController#show as HTML
+I, [2014-11-13T23:30:16.983628 #36264]  INFO -- :   Parameters: {"id"=>"46"}
+I, [2014-11-13T23:30:17.110331 #36264]  INFO -- :   Rendered games/show.html.erb within layouts/application (10.8ms)
+I, [2014-11-13T23:30:17.112161 #36264]  INFO -- : Completed 200 OK in 128ms (Views: 125.8ms | ActiveRecord: 1.2ms)
+I, [2014-11-13T23:30:19.370560 #36264]  INFO -- : Started GET "/games/46/edit" for 127.0.0.1 at 2014-11-13 23:30:19 -0500
+I, [2014-11-13T23:30:19.371666 #36264]  INFO -- : Processing by GamesController#edit as HTML
+I, [2014-11-13T23:30:19.371725 #36264]  INFO -- :   Parameters: {"id"=>"46"}
+I, [2014-11-13T23:30:19.377513 #36264]  INFO -- :   Rendered games/edit.html.erb within layouts/application (3.4ms)
+I, [2014-11-13T23:30:19.378512 #36264]  INFO -- : Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+I, [2014-11-13T23:30:22.545433 #36264]  INFO -- : Started DELETE "/games/46" for 127.0.0.1 at 2014-11-13 23:30:22 -0500
+I, [2014-11-13T23:30:22.546451 #36264]  INFO -- : Processing by GamesController#destroy as HTML
+I, [2014-11-13T23:30:22.546507 #36264]  INFO -- :   Parameters: {"authenticity_token"=>"MTRRsfjnYfuGJfg9zKxfRj793Ux3+nSLMxEL/8SQ238=", "id"=>"46"}
+I, [2014-11-13T23:30:22.625510 #36264]  INFO -- : Redirected to http://localhost:3000/games
+I, [2014-11-13T23:30:22.625697 #36264]  INFO -- : Completed 302 Found in 79ms (ActiveRecord: 46.2ms)
+I, [2014-11-13T23:30:22.631587 #36264]  INFO -- : Started GET "/games" for 127.0.0.1 at 2014-11-13 23:30:22 -0500
+I, [2014-11-13T23:30:22.632563 #36264]  INFO -- : Processing by GamesController#index as HTML
+I, [2014-11-13T23:30:22.637881 #36264]  INFO -- :   Rendered games/index.html.erb within layouts/application (0.9ms)
+I, [2014-11-13T23:30:22.639277 #36264]  INFO -- : Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.5ms)
+I, [2014-11-13T23:33:06.263387 #36264]  INFO -- : Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-11-13 23:33:06 -0500
+I, [2014-11-13T23:33:06.265401 #36264]  INFO -- : Processing by Devise::SessionsController#destroy as HTML
+I, [2014-11-13T23:33:06.265453 #36264]  INFO -- :   Parameters: {"authenticity_token"=>"MTRRsfjnYfuGJfg9zKxfRj793Ux3+nSLMxEL/8SQ238="}
+I, [2014-11-13T23:33:06.326858 #36264]  INFO -- : Redirected to http://localhost:3000/
+I, [2014-11-13T23:33:06.327164 #36264]  INFO -- : Completed 302 Found in 62ms (ActiveRecord: 0.4ms)
+I, [2014-11-13T23:33:06.335370 #36264]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 23:33:06 -0500
+I, [2014-11-13T23:33:06.336518 #36264]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-13T23:33:06.343695 #36264]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+I, [2014-11-13T23:33:06.344527 #36264]  INFO -- : Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:33:09.558797 #36264]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:33:09 -0500
+I, [2014-11-13T23:33:09.559990 #36264]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:33:09.569827 #36264]  INFO -- :   Rendered devise/shared/_links.html.erb (1.2ms)
+I, [2014-11-13T23:33:09.569938 #36264]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+I, [2014-11-13T23:33:09.570868 #36264]  INFO -- : Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:33:17.190512 #36264]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-13 23:33:17 -0500
+I, [2014-11-13T23:33:17.191588 #36264]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2014-11-13T23:33:17.191652 #36264]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"gs/XAPRXUMqgvDwOTLaYJOWKtm8YSlFspalshKrksX0=", "user"=>{"email"=>"aarpasi@gmx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2014-11-13T23:33:17.193859 #36264]  INFO -- : Completed 401 Unauthorized in 2ms
+I, [2014-11-13T23:33:17.195255 #36264]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-13T23:33:17.195320 #36264]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"gs/XAPRXUMqgvDwOTLaYJOWKtm8YSlFspalshKrksX0=", "user"=>{"email"=>"aarpasi@gmx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2014-11-13T23:33:17.292755 #36264]  INFO -- :   Rendered devise/shared/_links.html.erb (0.3ms)
+I, [2014-11-13T23:33:17.292866 #36264]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+I, [2014-11-13T23:33:17.293545 #36264]  INFO -- : Completed 200 OK in 98ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:33:32.099226 #36264]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-13 23:33:32 -0500
+I, [2014-11-13T23:33:32.100090 #36264]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-13T23:33:32.101347 #36264]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+I, [2014-11-13T23:33:32.102108 #36264]  INFO -- : Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+I, [2014-11-13T23:33:40.299053 #36264]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-11-13 23:33:40 -0500
+I, [2014-11-13T23:33:40.301138 #36264]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2014-11-13T23:33:40.309023 #36264]  INFO -- :   Rendered devise/shared/_links.html.erb (0.4ms)
+I, [2014-11-13T23:33:40.309133 #36264]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+I, [2014-11-13T23:33:40.309982 #36264]  INFO -- : Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+I, [2014-11-14T09:58:33.830004 #38811]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-14 09:58:33 -0500
+I, [2014-11-14T09:58:33.849548 #38811]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-14T09:58:33.867407 #38811]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+I, [2014-11-14T09:58:33.870454 #38811]  INFO -- : Completed 200 OK in 21ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+I, [2014-11-14T09:58:35.618476 #38811]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 09:58:35 -0500
+I, [2014-11-14T09:58:35.620882 #38811]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T09:58:35.621696 #38811]  INFO -- : Completed 401 Unauthorized in 1ms
+I, [2014-11-14T09:58:35.630245 #38811]  INFO -- : Started GET "/admin/login" for 127.0.0.1 at 2014-11-14 09:58:35 -0500
+I, [2014-11-14T09:58:35.632658 #38811]  INFO -- : Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+I, [2014-11-14T09:58:35.669971 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/shared/_links.erb (1.4ms)
+I, [2014-11-14T09:58:35.670084 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (24.4ms)
+I, [2014-11-14T09:58:51.697187 #38811]  INFO -- : Completed 200 OK in 16064ms (Views: 16053.7ms | ActiveRecord: 0.7ms)
+I, [2014-11-14T09:58:51.698877 #38811]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 09:58:51 -0500
+I, [2014-11-14T09:58:51.699876 #38811]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T09:58:51.700739 #38811]  INFO -- : Completed 401 Unauthorized in 1ms
+I, [2014-11-14T09:58:51.702118 #38811]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 09:58:51 -0500
+I, [2014-11-14T09:58:51.702651 #38811]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T09:58:51.703076 #38811]  INFO -- : Completed 401 Unauthorized in 0ms
+I, [2014-11-14T09:58:51.710605 #38811]  INFO -- : Started GET "/admin/login" for 127.0.0.1 at 2014-11-14 09:58:51 -0500
+I, [2014-11-14T09:58:51.711791 #38811]  INFO -- : Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+I, [2014-11-14T09:58:51.726582 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/shared/_links.erb (0.4ms)
+I, [2014-11-14T09:58:51.726693 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (13.3ms)
+I, [2014-11-14T09:58:51.728911 #38811]  INFO -- : Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+I, [2014-11-14T09:58:51.940402 #38811]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 09:58:51 -0500
+I, [2014-11-14T09:58:51.954973 #38811]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 09:58:51 -0500
+I, [2014-11-14T09:58:51.959743 #38811]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 09:58:51 -0500
+I, [2014-11-14T09:58:55.676332 #38811]  INFO -- : Started POST "/admin/login" for 127.0.0.1 at 2014-11-14 09:58:55 -0500
+I, [2014-11-14T09:58:55.677495 #38811]  INFO -- : Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+I, [2014-11-14T09:58:55.677565 #38811]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"6c4tbTqty/Qcecbb+2lX0Gp5spargdGcKdvGgFTifV4=", "admin_user"=>{"email"=>"aarpasi@gmx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+I, [2014-11-14T09:58:55.786541 #38811]  INFO -- : Redirected to http://localhost:3000/admin
+I, [2014-11-14T09:58:55.786756 #38811]  INFO -- : Completed 302 Found in 109ms (ActiveRecord: 3.8ms)
+I, [2014-11-14T09:58:55.792463 #38811]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 09:58:55 -0500
+I, [2014-11-14T09:58:55.793411 #38811]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T09:58:55.810187 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (12.2ms)
+I, [2014-11-14T09:58:55.810515 #38811]  INFO -- : Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T09:59:03.458831 #38811]  INFO -- : Started GET "/admin/admin_users" for 127.0.0.1 at 2014-11-14 09:59:03 -0500
+I, [2014-11-14T09:59:03.461186 #38811]  INFO -- : Processing by Admin::AdminUsersController#index as HTML
+I, [2014-11-14T09:59:03.514807 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (47.5ms)
+I, [2014-11-14T09:59:03.515104 #38811]  INFO -- : Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 0.7ms)
+I, [2014-11-14T09:59:03.584502 #38811]  INFO -- : Started GET "/assets/active_admin/orderable-26985cf64ab6deee88be7994d3aeab45.png" for 127.0.0.1 at 2014-11-14 09:59:03 -0500
+I, [2014-11-14T09:59:03.589929 #38811]  INFO -- : Started GET "/assets/active_admin/datepicker/datepicker-input-icon-c0286c5a139ea5759e038f113aae32fd.png" for 127.0.0.1 at 2014-11-14 09:59:03 -0500
+I, [2014-11-14T09:59:04.613496 #38811]  INFO -- : Started GET "/admin/comments" for 127.0.0.1 at 2014-11-14 09:59:04 -0500
+I, [2014-11-14T09:59:04.615837 #38811]  INFO -- : Processing by Admin::CommentsController#index as HTML
+I, [2014-11-14T09:59:04.687749 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (66.9ms)
+I, [2014-11-14T09:59:04.688041 #38811]  INFO -- : Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 1.9ms)
+I, [2014-11-14T09:59:10.800745 #38811]  INFO -- : Started GET "/admin/favorites" for 127.0.0.1 at 2014-11-14 09:59:10 -0500
+I, [2014-11-14T09:59:10.802969 #38811]  INFO -- : Processing by Admin::FavoritesController#index as HTML
+I, [2014-11-14T09:59:10.860353 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (50.6ms)
+I, [2014-11-14T09:59:10.860675 #38811]  INFO -- : Completed 200 OK in 58ms (Views: 52.3ms | ActiveRecord: 1.3ms)
+I, [2014-11-14T09:59:12.013727 #38811]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 09:59:12 -0500
+I, [2014-11-14T09:59:12.014798 #38811]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T09:59:12.028674 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (11.7ms)
+I, [2014-11-14T09:59:12.028933 #38811]  INFO -- : Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T09:59:23.190774 #38811]  INFO -- : Started GET "/admin/comments" for 127.0.0.1 at 2014-11-14 09:59:23 -0500
+I, [2014-11-14T09:59:23.191708 #38811]  INFO -- : Processing by Admin::CommentsController#index as HTML
+I, [2014-11-14T09:59:23.243346 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (49.2ms)
+I, [2014-11-14T09:59:23.243625 #38811]  INFO -- : Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.9ms)
+I, [2014-11-14T09:59:24.747438 #38811]  INFO -- : Started GET "/admin/favorites" for 127.0.0.1 at 2014-11-14 09:59:24 -0500
+I, [2014-11-14T09:59:24.748403 #38811]  INFO -- : Processing by Admin::FavoritesController#index as HTML
+I, [2014-11-14T09:59:24.790371 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (38.9ms)
+I, [2014-11-14T09:59:24.790693 #38811]  INFO -- : Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 1.1ms)
+I, [2014-11-14T09:59:27.957776 #38811]  INFO -- : Started GET "/admin/games" for 127.0.0.1 at 2014-11-14 09:59:27 -0500
+I, [2014-11-14T09:59:27.960444 #38811]  INFO -- : Processing by Admin::GamesController#index as HTML
+I, [2014-11-14T09:59:28.036619 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (70.8ms)
+I, [2014-11-14T09:59:28.036929 #38811]  INFO -- : Completed 200 OK in 76ms (Views: 72.2ms | ActiveRecord: 1.2ms)
+I, [2014-11-14T09:59:38.271752 #38811]  INFO -- : Started GET "/admin/favorites" for 127.0.0.1 at 2014-11-14 09:59:38 -0500
+I, [2014-11-14T09:59:38.272869 #38811]  INFO -- : Processing by Admin::FavoritesController#index as HTML
+I, [2014-11-14T09:59:38.315087 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (39.2ms)
+I, [2014-11-14T09:59:38.315584 #38811]  INFO -- : Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 1.1ms)
+I, [2014-11-14T09:59:40.012790 #38811]  INFO -- : Started GET "/admin/comments" for 127.0.0.1 at 2014-11-14 09:59:40 -0500
+I, [2014-11-14T09:59:40.013702 #38811]  INFO -- : Processing by Admin::CommentsController#index as HTML
+I, [2014-11-14T09:59:40.067918 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (51.2ms)
+I, [2014-11-14T09:59:40.068208 #38811]  INFO -- : Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 1.0ms)
+I, [2014-11-14T09:59:41.040912 #38811]  INFO -- : Started GET "/admin/games" for 127.0.0.1 at 2014-11-14 09:59:41 -0500
+I, [2014-11-14T09:59:41.041837 #38811]  INFO -- : Processing by Admin::GamesController#index as HTML
+I, [2014-11-14T09:59:41.112728 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (68.3ms)
+I, [2014-11-14T09:59:41.113215 #38811]  INFO -- : Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 1.2ms)
+I, [2014-11-14T09:59:43.293476 #38811]  INFO -- : Started GET "/admin/games/51" for 127.0.0.1 at 2014-11-14 09:59:43 -0500
+I, [2014-11-14T09:59:43.294566 #38811]  INFO -- : Processing by Admin::GamesController#show as HTML
+I, [2014-11-14T09:59:43.294621 #38811]  INFO -- :   Parameters: {"id"=>"51"}
+I, [2014-11-14T09:59:43.328844 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/show.html.arb (29.3ms)
+I, [2014-11-14T09:59:43.329132 #38811]  INFO -- : Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.5ms)
+I, [2014-11-14T09:59:49.011526 #38811]  INFO -- : Started GET "/admin/comments" for 127.0.0.1 at 2014-11-14 09:59:49 -0500
+I, [2014-11-14T09:59:49.012583 #38811]  INFO -- : Processing by Admin::CommentsController#index as HTML
+I, [2014-11-14T09:59:49.068612 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (53.1ms)
+I, [2014-11-14T09:59:49.068919 #38811]  INFO -- : Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 1.1ms)
+I, [2014-11-14T09:59:51.270910 #38811]  INFO -- : Started GET "/admin/comments/23" for 127.0.0.1 at 2014-11-14 09:59:51 -0500
+I, [2014-11-14T09:59:51.272051 #38811]  INFO -- : Processing by Admin::CommentsController#show as HTML
+I, [2014-11-14T09:59:51.272106 #38811]  INFO -- :   Parameters: {"id"=>"23"}
+I, [2014-11-14T09:59:51.298457 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/show.html.arb (22.3ms)
+I, [2014-11-14T09:59:51.298676 #38811]  INFO -- : Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.6ms)
+I, [2014-11-14T09:59:53.188754 #38811]  INFO -- : Started GET "/admin/comments/23/edit" for 127.0.0.1 at 2014-11-14 09:59:53 -0500
+I, [2014-11-14T09:59:53.189728 #38811]  INFO -- : Processing by Admin::CommentsController#edit as HTML
+I, [2014-11-14T09:59:53.189829 #38811]  INFO -- :   Parameters: {"id"=>"23"}
+I, [2014-11-14T09:59:53.231160 #38811]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/edit.html.arb (36.8ms)
+I, [2014-11-14T09:59:53.231418 #38811]  INFO -- : Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 1.0ms)
+I, [2014-11-14T09:59:58.531329 #38811]  INFO -- : Started PATCH "/admin/comments/23" for 127.0.0.1 at 2014-11-14 09:59:58 -0500
+I, [2014-11-14T09:59:58.532434 #38811]  INFO -- : Processing by Admin::CommentsController#update as HTML
+I, [2014-11-14T09:59:58.532503 #38811]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"GQO5/QkyAtIpQ5jAvAY5PUe+vCxULcW1NBkY2SZUv6k=", "comment"=>{"game_id"=>"51", "user_id"=>"14", "title"=>"", "content"=>"gr8 m8 i r8 8/9"}, "commit"=>"Update Comment", "id"=>"23"}
+I, [2014-11-14T09:59:58.534711 #38811]  INFO -- : Completed 500 Internal Server Error in 2ms
+F, [2014-11-14T09:59:58.537842 #38811] FATAL -- : 
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  activemodel (4.1.5) lib/active_model/forbidden_attributes_protection.rb:21:in `sanitize_for_mass_assignment'
+  activerecord (4.1.5) lib/active_record/attribute_assignment.rb:24:in `assign_attributes'
+  /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/lib/active_admin/resource_controller/data_access.rb:175:in `update_resource'
+  inherited_resources (1.5.1) lib/inherited_resources/actions.rb:45:in `update'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `load'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `load'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:16:in `require'
+  bin/spring:16:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2014-11-14T15:43:04.486030 #39461]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-14 15:43:04 -0500
+I, [2014-11-14T15:43:04.503520 #39461]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-14T15:43:04.524415 #39461]  INFO -- :   Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+I, [2014-11-14T15:43:04.527037 #39461]  INFO -- : Completed 200 OK in 23ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+I, [2014-11-14T15:43:08.707960 #39461]  INFO -- : Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-14 15:43:08 -0500
+I, [2014-11-14T15:43:08.753996 #39461]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2014-11-14T15:43:08.782949 #39461]  INFO -- :   Rendered devise/shared/_links.html.erb (1.3ms)
+I, [2014-11-14T15:43:08.783062 #39461]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+I, [2014-11-14T15:43:08.783974 #39461]  INFO -- : Completed 200 OK in 30ms (Views: 12.2ms | ActiveRecord: 0.9ms)
+I, [2014-11-14T15:43:14.392990 #39461]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-14 15:43:14 -0500
+I, [2014-11-14T15:43:14.394245 #39461]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2014-11-14T15:43:14.394361 #39461]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"IvjRCtheZHh+hwm6juNBCAvM1AlUbCa25EBxkf0ZWdo=", "user"=>{"email"=>"aarpasi@gmx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+I, [2014-11-14T15:43:14.499842 #39461]  INFO -- : Redirected to http://localhost:3000/
+I, [2014-11-14T15:43:14.500036 #39461]  INFO -- : Completed 302 Found in 106ms (ActiveRecord: 3.6ms)
+I, [2014-11-14T15:43:14.505684 #39461]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-14 15:43:14 -0500
+I, [2014-11-14T15:43:14.506613 #39461]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-14T15:43:14.508164 #39461]  INFO -- : Redirected to http://localhost:3000/games
+I, [2014-11-14T15:43:14.508305 #39461]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+I, [2014-11-14T15:43:14.514024 #39461]  INFO -- : Started GET "/games" for 127.0.0.1 at 2014-11-14 15:43:14 -0500
+I, [2014-11-14T15:43:14.516210 #39461]  INFO -- : Processing by GamesController#index as HTML
+I, [2014-11-14T15:43:14.539746 #39461]  INFO -- :   Rendered games/index.html.erb within layouts/application (6.1ms)
+I, [2014-11-14T15:43:14.540926 #39461]  INFO -- : Completed 200 OK in 25ms (Views: 9.4ms | ActiveRecord: 1.4ms)
+I, [2014-11-14T15:43:17.959788 #39461]  INFO -- : Started GET "/games/51" for 127.0.0.1 at 2014-11-14 15:43:17 -0500
+I, [2014-11-14T15:43:17.960907 #39461]  INFO -- : Processing by GamesController#show as HTML
+I, [2014-11-14T15:43:17.960953 #39461]  INFO -- :   Parameters: {"id"=>"51"}
+I, [2014-11-14T15:43:17.991413 #39461]  INFO -- :   Rendered games/show.html.erb within layouts/application (27.4ms)
+I, [2014-11-14T15:43:17.993328 #39461]  INFO -- : Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 2.0ms)
+I, [2014-11-14T15:43:20.754528 #39461]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-14 15:43:20 -0500
+I, [2014-11-14T15:43:20.755476 #39461]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-14T15:43:20.756930 #39461]  INFO -- : Redirected to http://localhost:3000/games
+I, [2014-11-14T15:43:20.757434 #39461]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+I, [2014-11-14T15:43:20.767030 #39461]  INFO -- : Started GET "/games" for 127.0.0.1 at 2014-11-14 15:43:20 -0500
+I, [2014-11-14T15:43:20.767914 #39461]  INFO -- : Processing by GamesController#index as HTML
+I, [2014-11-14T15:43:20.773542 #39461]  INFO -- :   Rendered games/index.html.erb within layouts/application (2.7ms)
+I, [2014-11-14T15:43:20.774517 #39461]  INFO -- : Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+I, [2014-11-14T15:47:55.812728 #39461]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 15:47:55 -0500
+I, [2014-11-14T15:47:55.814758 #39461]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:47:55.815497 #39461]  INFO -- : Completed 401 Unauthorized in 1ms
+I, [2014-11-14T15:47:55.823214 #39461]  INFO -- : Started GET "/admin/login" for 127.0.0.1 at 2014-11-14 15:47:55 -0500
+I, [2014-11-14T15:47:55.825496 #39461]  INFO -- : Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+I, [2014-11-14T15:47:55.863722 #39461]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/shared/_links.erb (1.3ms)
+I, [2014-11-14T15:47:55.863837 #39461]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (28.1ms)
+I, [2014-11-14T15:47:55.901636 #39461]  INFO -- : Completed 200 OK in 76ms (Views: 68.2ms | ActiveRecord: 0.4ms)
+I, [2014-11-14T15:49:47.351227 #39461]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-14 15:49:47 -0500
+I, [2014-11-14T15:49:47.352326 #39461]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-14T15:49:47.354031 #39461]  INFO -- : Redirected to http://localhost:3000/games
+I, [2014-11-14T15:49:47.354180 #39461]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+I, [2014-11-14T15:49:47.359613 #39461]  INFO -- : Started GET "/games" for 127.0.0.1 at 2014-11-14 15:49:47 -0500
+I, [2014-11-14T15:49:47.360437 #39461]  INFO -- : Processing by GamesController#index as HTML
+I, [2014-11-14T15:49:47.365252 #39461]  INFO -- :   Rendered games/index.html.erb within layouts/application (2.3ms)
+I, [2014-11-14T15:49:47.366415 #39461]  INFO -- : Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.6ms)
+I, [2014-11-14T15:50:43.692093 #39461]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 15:50:43 -0500
+I, [2014-11-14T15:50:43.692938 #39461]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:50:43.693661 #39461]  INFO -- : Completed 401 Unauthorized in 1ms
+I, [2014-11-14T15:50:43.699766 #39461]  INFO -- : Started GET "/admin/login" for 127.0.0.1 at 2014-11-14 15:50:43 -0500
+I, [2014-11-14T15:50:43.700655 #39461]  INFO -- : Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+I, [2014-11-14T15:50:43.714112 #39461]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/shared/_links.erb (0.3ms)
+I, [2014-11-14T15:50:43.714217 #39461]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (12.0ms)
+I, [2014-11-14T15:50:43.716337 #39461]  INFO -- : Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+I, [2014-11-14T15:50:48.402609 #39461]  INFO -- : Started POST "/admin/login" for 127.0.0.1 at 2014-11-14 15:50:48 -0500
+I, [2014-11-14T15:50:48.403737 #39461]  INFO -- : Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+I, [2014-11-14T15:50:48.403812 #39461]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"8RPek/j1vu8/SnfPGqUoxOVm9bypiN2sUFxYi8otsI0=", "admin_user"=>{"email"=>"aarpasi@gmx.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+I, [2014-11-14T15:50:48.504993 #39461]  INFO -- : Redirected to http://localhost:3000/admin
+I, [2014-11-14T15:50:48.505135 #39461]  INFO -- : Completed 302 Found in 101ms (ActiveRecord: 3.3ms)
+I, [2014-11-14T15:50:48.510928 #39461]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 15:50:48 -0500
+I, [2014-11-14T15:50:48.511751 #39461]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:50:48.528039 #39461]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (11.4ms)
+I, [2014-11-14T15:50:48.528320 #39461]  INFO -- : Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:23.459789 #39657]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-11-14 15:52:23 -0500
+I, [2014-11-14T15:52:23.476924 #39657]  INFO -- : Processing by StaticPagesController#home as HTML
+I, [2014-11-14T15:52:23.502279 #39657]  INFO -- : Redirected to http://localhost:3000/games
+I, [2014-11-14T15:52:23.502505 #39657]  INFO -- : Completed 302 Found in 25ms (ActiveRecord: 1.0ms)
+I, [2014-11-14T15:52:23.511752 #39657]  INFO -- : Started GET "/games" for 127.0.0.1 at 2014-11-14 15:52:23 -0500
+I, [2014-11-14T15:52:23.515250 #39657]  INFO -- : Processing by GamesController#index as HTML
+I, [2014-11-14T15:52:23.550099 #39657]  INFO -- :   Rendered games/index.html.erb within layouts/application (7.4ms)
+I, [2014-11-14T15:52:23.552333 #39657]  INFO -- : Completed 200 OK in 37ms (Views: 13.9ms | ActiveRecord: 1.6ms)
+I, [2014-11-14T15:52:26.282545 #39657]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 15:52:26 -0500
+I, [2014-11-14T15:52:26.284914 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:26.349749 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (52.8ms)
+I, [2014-11-14T15:52:26.350014 #39657]  INFO -- : Completed 200 OK in 65ms (Views: 54.5ms | ActiveRecord: 0.6ms)
+I, [2014-11-14T15:52:32.543005 #39657]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2014-11-14 15:52:32 -0500
+I, [2014-11-14T15:52:32.543927 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:32.557001 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (11.3ms)
+I, [2014-11-14T15:52:32.557272 #39657]  INFO -- : Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:32.590732 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:32 -0500
+I, [2014-11-14T15:52:32.603851 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:32 -0500
+I, [2014-11-14T15:52:32.607356 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:32 -0500
+I, [2014-11-14T15:52:34.512332 #39657]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:34 -0500
+I, [2014-11-14T15:52:34.513236 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:34.525906 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (11.1ms)
+I, [2014-11-14T15:52:34.526166 #39657]  INFO -- : Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:34.555316 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:34 -0500
+I, [2014-11-14T15:52:34.556870 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:34 -0500
+I, [2014-11-14T15:52:34.557934 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:34 -0500
+I, [2014-11-14T15:52:35.758316 #39657]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:35 -0500
+I, [2014-11-14T15:52:35.759088 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:35.772867 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (12.2ms)
+I, [2014-11-14T15:52:35.773165 #39657]  INFO -- : Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:35.806025 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:35 -0500
+I, [2014-11-14T15:52:35.807025 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:35 -0500
+I, [2014-11-14T15:52:35.808113 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:35 -0500
+I, [2014-11-14T15:52:42.882435 #39657]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:42 -0500
+I, [2014-11-14T15:52:42.883285 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:42.895770 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.9ms)
+I, [2014-11-14T15:52:42.896044 #39657]  INFO -- : Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:42.924526 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:42 -0500
+I, [2014-11-14T15:52:42.925497 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:42 -0500
+I, [2014-11-14T15:52:42.926180 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:42 -0500
+I, [2014-11-14T15:52:44.863237 #39657]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:44 -0500
+I, [2014-11-14T15:52:44.864143 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:44.876417 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.7ms)
+I, [2014-11-14T15:52:44.876659 #39657]  INFO -- : Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:44.918611 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:44 -0500
+I, [2014-11-14T15:52:44.921920 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:44 -0500
+I, [2014-11-14T15:52:44.922811 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:44 -0500
+I, [2014-11-14T15:52:45.628401 #39657]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:45.629202 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:45.640708 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (9.9ms)
+I, [2014-11-14T15:52:45.640955 #39657]  INFO -- : Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:45.669956 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:45.671075 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:45.671869 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:45.918776 #39657]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:45.919539 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:45.931998 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.8ms)
+I, [2014-11-14T15:52:45.932241 #39657]  INFO -- : Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:45.961614 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:45.962583 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:45.963564 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:45 -0500
+I, [2014-11-14T15:52:46.896305 #39657]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:46 -0500
+I, [2014-11-14T15:52:46.897144 #39657]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:46.909684 #39657]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.8ms)
+I, [2014-11-14T15:52:46.909957 #39657]  INFO -- : Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:52:46.938481 #39657]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:46 -0500
+I, [2014-11-14T15:52:46.939608 #39657]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:46 -0500
+I, [2014-11-14T15:52:46.940601 #39657]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:46 -0500
+I, [2014-11-14T15:52:53.855724 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:52:53 -0500
+I, [2014-11-14T15:52:53.874955 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:52:53.968560 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (66.9ms)
+I, [2014-11-14T15:52:53.969047 #39663]  INFO -- : Completed 200 OK in 94ms (Views: 69.6ms | ActiveRecord: 0.9ms)
+I, [2014-11-14T15:52:54.001338 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:52:54 -0500
+I, [2014-11-14T15:52:54.014049 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:52:54 -0500
+I, [2014-11-14T15:52:54.017516 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:52:54 -0500
+I, [2014-11-14T15:53:53.402450 #39663]  INFO -- : Started GET "/admin/admin_users/1" for 127.0.0.1 at 2014-11-14 15:53:53 -0500
+I, [2014-11-14T15:53:53.404867 #39663]  INFO -- : Processing by Admin::AdminUsersController#show as HTML
+I, [2014-11-14T15:53:53.404919 #39663]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2014-11-14T15:53:53.434532 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/show.html.arb (24.5ms)
+I, [2014-11-14T15:53:53.434824 #39663]  INFO -- : Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+I, [2014-11-14T15:53:53.494112 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:53:53 -0500
+I, [2014-11-14T15:53:53.495225 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:53:53 -0500
+I, [2014-11-14T15:53:53.496398 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:53:53 -0500
+I, [2014-11-14T15:53:57.144995 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:53:57 -0500
+I, [2014-11-14T15:53:57.146064 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:53:57.158607 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.6ms)
+I, [2014-11-14T15:53:57.158917 #39663]  INFO -- : Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:53:57.190287 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:53:57 -0500
+I, [2014-11-14T15:53:57.191580 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:53:57 -0500
+I, [2014-11-14T15:53:57.192845 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:53:57 -0500
+I, [2014-11-14T15:54:15.122409 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:54:15 -0500
+I, [2014-11-14T15:54:15.123238 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:54:15.135555 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.6ms)
+I, [2014-11-14T15:54:15.135839 #39663]  INFO -- : Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:54:15.163203 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:54:15 -0500
+I, [2014-11-14T15:54:15.164164 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:54:15 -0500
+I, [2014-11-14T15:54:15.164831 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:54:15 -0500
+I, [2014-11-14T15:54:17.316142 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:17.317161 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:54:17.329308 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.3ms)
+I, [2014-11-14T15:54:17.329544 #39663]  INFO -- : Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:54:17.368839 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:17.369962 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:17.371105 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:17.817070 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:17.817882 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:54:17.829841 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.2ms)
+I, [2014-11-14T15:54:17.830101 #39663]  INFO -- : Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:54:17.861773 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:17.862794 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:17.863821 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:54:17 -0500
+I, [2014-11-14T15:54:25.268593 #39663]  INFO -- : Started GET "/admin/comments" for 127.0.0.1 at 2014-11-14 15:54:25 -0500
+I, [2014-11-14T15:54:25.271009 #39663]  INFO -- : Processing by Admin::CommentsController#index as HTML
+I, [2014-11-14T15:54:25.362203 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (83.5ms)
+I, [2014-11-14T15:54:25.362491 #39663]  INFO -- : Completed 200 OK in 91ms (Views: 85.6ms | ActiveRecord: 2.2ms)
+I, [2014-11-14T15:54:25.420051 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:54:25 -0500
+I, [2014-11-14T15:54:25.421648 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:54:25 -0500
+I, [2014-11-14T15:54:25.423283 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:54:25 -0500
+I, [2014-11-14T15:54:52.990250 #39663]  INFO -- : Started GET "/admin/comments/23" for 127.0.0.1 at 2014-11-14 15:54:52 -0500
+I, [2014-11-14T15:54:52.991304 #39663]  INFO -- : Processing by Admin::CommentsController#show as HTML
+I, [2014-11-14T15:54:52.991366 #39663]  INFO -- :   Parameters: {"id"=>"23"}
+I, [2014-11-14T15:54:53.022034 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/show.html.arb (26.2ms)
+I, [2014-11-14T15:54:53.022276 #39663]  INFO -- : Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+I, [2014-11-14T15:54:53.071508 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:54:53 -0500
+I, [2014-11-14T15:54:53.073033 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:54:53 -0500
+I, [2014-11-14T15:54:53.074489 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:54:53 -0500
+I, [2014-11-14T15:55:00.764454 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:55:00 -0500
+I, [2014-11-14T15:55:00.765620 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:55:00.778397 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.6ms)
+I, [2014-11-14T15:55:00.778715 #39663]  INFO -- : Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:55:00.815160 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:55:00 -0500
+I, [2014-11-14T15:55:00.816146 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:55:00 -0500
+I, [2014-11-14T15:55:00.817157 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:55:00 -0500
+I, [2014-11-14T15:55:07.669374 #39663]  INFO -- : Started GET "/admin/admin_users" for 127.0.0.1 at 2014-11-14 15:55:07 -0500
+I, [2014-11-14T15:55:07.670405 #39663]  INFO -- : Processing by Admin::AdminUsersController#index as HTML
+I, [2014-11-14T15:55:07.723551 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/resource/index.html.arb (48.3ms)
+I, [2014-11-14T15:55:07.723899 #39663]  INFO -- : Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.7ms)
+I, [2014-11-14T15:55:07.761055 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:55:07 -0500
+I, [2014-11-14T15:55:07.762452 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:55:07 -0500
+I, [2014-11-14T15:55:07.763541 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:55:07 -0500
+I, [2014-11-14T15:55:21.357015 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:55:21 -0500
+I, [2014-11-14T15:55:21.357974 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:55:21.371746 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (11.9ms)
+I, [2014-11-14T15:55:21.372016 #39663]  INFO -- : Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:55:21.407716 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:55:21 -0500
+I, [2014-11-14T15:55:21.408866 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:55:21 -0500
+I, [2014-11-14T15:55:21.409979 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:55:21 -0500
+I, [2014-11-14T15:56:01.222540 #39663]  INFO -- : Started GET "/admin/dashboard" for 127.0.0.1 at 2014-11-14 15:56:01 -0500
+I, [2014-11-14T15:56:01.223480 #39663]  INFO -- : Processing by Admin::DashboardController#index as HTML
+I, [2014-11-14T15:56:01.235597 #39663]  INFO -- :   Rendered /Users/andrew/.bundler/ruby/2.1.0/activeadmin-99d76711783c/app/views/active_admin/page/index.html.arb (10.3ms)
+I, [2014-11-14T15:56:01.235851 #39663]  INFO -- : Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+I, [2014-11-14T15:56:01.278207 #39663]  INFO -- : Started GET "/assets/active_admin-2f75d8b582c54a3fe6e01fee092ba169.css" for 127.0.0.1 at 2014-11-14 15:56:01 -0500
+I, [2014-11-14T15:56:01.279730 #39663]  INFO -- : Started GET "/assets/active_admin/print-df6cea670fa3b915545a8610038d33ed.css" for 127.0.0.1 at 2014-11-14 15:56:01 -0500
+I, [2014-11-14T15:56:01.280817 #39663]  INFO -- : Started GET "/assets/active_admin-8994f5c2754b1423da8ee42e23b14942.js" for 127.0.0.1 at 2014-11-14 15:56:01 -0500

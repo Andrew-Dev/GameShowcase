@@ -1,0 +1,17 @@
+<h2>Forgot your password?</h2>
+<div class="alert alert-danger">
+<p class="lead">Please ask Andrew Arpasi for a password change.</p>
+<p>He will be happy to help you resolve any account issues.</p>
+<p>Why not automatic password reset? The mail server is not properly set up and Andrew doesn't want to go through the school's funding formalities to get money to buy a domain and doensn't want to spend too much time setting up a mail server on a website that will only be online for about a week or so.</p>
+</div>
+<p>Below you will find a broken password reset form: </p>
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, autofocus: true %></div>
+
+  <div><%= f.submit "Send me reset password instructions" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
